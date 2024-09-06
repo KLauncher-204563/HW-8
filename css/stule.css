@@ -1,9 +1,26 @@
-a[href="https://www.youtube.com/"]{
-    color: red;
-}
-a[href="https://validator.w3.org/"]{
-    color: red;
-}
-ul + p{
-    font-size: 24px;    
+    #greycol{
+        color:grey;
     }
+
+{
+    color:green;
+}
+  p:nth-last-child(-n + 2) {
+    color:green ;
+  }
+
+
+    p:only-child {
+        color: red;
+      }
+    h3 + p{
+        
+    }
+    p.yellow {
+        color:yellow; 
+
+
+    }
+    h3:first-child{
+        color:pink;
+        
