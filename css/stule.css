@@ -23,4 +23,42 @@
     }
     h3:first-child{
         color:pink;
-        
+    }
+        section {
+          max-width: 1170px;
+          margin-left: auto;
+          margin-right: auto;
+          padding-left: 16px;
+          padding-right: 16px;
+    }
+.wrapper{
+  font-size: 20px;
+}
+#pon{
+  background-color: blue;
+}
+#wiw{
+  background-color: aqua;
+}
+#cre{
+  background-color: brown;
+  font-size: 10px;
+}
+#fr{
+  background: black;
+  color: aliceblue;
+}
+    #q:active {
+     color: #f00; 
+      background: #00f;
+    }
+    span:empty {
+      background: red;
+      padding: 3px
+      margin-left: 7px;
+      display: inline-block
+     }
+     button:hover {
+      background: #786b59; 
+      color: #fee; 
+    }
