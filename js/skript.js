@@ -28,48 +28,85 @@
 // let confirmDanger = confirm("Ви впевнені, що хочете продовжити?");
 // console.log("Користувач підтвердив дію:", confirmDanger);
 
-let celsius = 25;
-let fahrenheit = (celsius * 9/5) + 32;
-console.log("Температура у Фаренгейтах:", fahrenheit);
+// let celsius = 25;
+// let fahrenheit = (celsius * 9/5) + 32;
+// console.log("Температура у Фаренгейтах:", fahrenheit);
 
-let daysInMonth = 30;
-let hoursInMonth = daysInMonth * 24;
-let minutesInMonth = hoursInMonth * 60;
-console.log("Годин у місяці:", hoursInMonth);
-console.log("Хвилин у місяці:", minutesInMonth);
+// let daysInMonth = 30;
+// let hoursInMonth = daysInMonth * 24;
+// let minutesInMonth = hoursInMonth * 60;
+// console.log("Годин у місяці:", hoursInMonth);
+// console.log("Хвилин у місяці:", minutesInMonth);
+
+// let health = 100;
+// let energy = 80;
+// health -= 20; // зменшуємо здоров’я на 20
+// energy -= 15; // зменшуємо енергію на 15
+// console.log("Здоров’я:", health);
+// console.log("Енергія:", energy);
+
+// let totalPrice = 500;
+// let discount = 0.1;
+// let discountedPrice = totalPrice * (1 - discount);
+// console.log("Ціна зі знижкою:", discountedPrice);
+
+// const floatNumber = 12.78;
+// let roundedDown = Math.floor(floatNumber);
+// console.log("Округлено вниз:", roundedDown);
+
+// const floatString = "45.67";
+// let parsedFloat = parseFloat(floatString);
+// console.log("Десяткове число:", parsedFloat);
+
+// const intString = "123";
+// let parsedInt = parseInt(intString);
+// console.log("Ціле число:", parsedInt);
+
+// let number = 64;
+// let sqrtNumber = Math.sqrt(number);
+// console.log("Квадратний корінь:", sqrtNumber)
+
+// const integer = 42;
+// const stringNumber = "256";
+// let convertedInt = parseInt(stringNumber);
+// let convertedString = integer.toString();
+// console.log("Рядок '256' у число:", convertedInt);
+// console.log("Число 42 у рядок:", convertedString);
+
+// const message = "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+// console.log(message(message.length-1));
+
+// // Створити змінну, яка містить рядок з вашим ім'ям. 
+// // Використовуючи метод .toUpperCase(), перетворити рядок у верхній регістр та вивести результат в консоль.
+
+// const myManem = "Ivan"
+// console.log(myManem.toUpperCase());
 
 
-let health = 100;
-let energy = 80;
-health -= 20; // зменшуємо здоров’я на 20
-energy -= 15; // зменшуємо енергію на 15
-console.log("Здоров’я:", health);
-console.log("Енергія:", energy);
 
-let totalPrice = 500;
-let discount = 0.1;
-let discountedPrice = totalPrice * (1 - discount);
-console.log("Ціна зі знижкою:", discountedPrice);
 
-const floatNumber = 12.78;
-let roundedDown = Math.floor(floatNumber);
-console.log("Округлено вниз:", roundedDown);
+let result = 5 + 5 + '5';
+console.log(result);          
+console.log(typeof result);   
 
-const floatString = "45.67";
-let parsedFloat = parseFloat(floatString);
-console.log("Десяткове число:", parsedFloat);
+    let email = "example@gmail.com";
 
-const intString = "123";
-let parsedInt = parseInt(intString);
-console.log("Ціле число:", parsedInt);
+let containsAt = email.includes("@");
+let length = email.length;
 
-let number = 64;
-let sqrtNumber = Math.sqrt(number);
-console.log("Квадратний корінь:", sqrtNumber);
+console.log("Містить @:", containsAt);       
+console.log("Кількість символів:", length);
 
-const integer = 42;
-const stringNumber = "256";
-let convertedInt = parseInt(stringNumber);
-let convertedString = integer.toString();
-console.log("Рядок '256' у число:", convertedInt);
-console.log("Число 42 у рядок:", convertedString);
+let word1 = "My";
+let word2 = "name";
+let word3 = "is";
+
+let fullName = `${word1} ${word2} ${word3}`;
+fullName += " Viktor";
+
+console.log(fullName); 
+
+let userName = "Олександро";
+let payment = 300;
+
+alert(`Дякуємо, ${userName}! До сплати ${payment} гривень`);
