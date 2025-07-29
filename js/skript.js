@@ -84,29 +84,126 @@
 
 
 
+// let result = 5 + 5 + '5';
+// console.log(result);          
+// console.log(typeof result);   
 
-let result = 5 + 5 + '5';
-console.log(result);          
-console.log(typeof result);   
+//     let email = "example@gmail.com";
 
-    let email = "example@gmail.com";
+// let containsAt = email.includes("@");
+// let length = email.length;
 
-let containsAt = email.includes("@");
-let length = email.length;
+// console.log("Містить @:", containsAt);       
+// console.log("Кількість символів:", length);
 
-console.log("Містить @:", containsAt);       
-console.log("Кількість символів:", length);
+// let word1 = "My";
+// let word2 = "name";
+// let word3 = "is";
 
-let word1 = "My";
-let word2 = "name";
-let word3 = "is";
+// let fullName = `${word1} ${word2} ${word3}`;
+// fullName += " Viktor";
 
-let fullName = `${word1} ${word2} ${word3}`;
-fullName += " Viktor";
+// console.log(fullName); 
 
-console.log(fullName); 
+// let userName = "Олександро";
+// let payment = 300;
 
-let userName = "Олександро";
-let payment = 300;
+// alert(`Дякуємо, ${userName}! До сплати ${payment} гривень`);
 
-alert(`Дякуємо, ${userName}! До сплати ${payment} гривень`);
+//Напиши скрит підрахунку суми покупки зі знижкою в залежності від витраченої суми за весь час (партнерська програма).
+
+// Користувач вводить в інпут сумму витрачену в даному магазині і отримує розмір знижки як результат.
+//  - Загальна сума витрачених коштів зберігається в змінній totalSpent
+//  - Сума поточного платежа зберігається в змінній payment
+//  - Знижка зберігається в змінній discount
+
+//  - Якщо витрачено від [100 до 1000) - бронзовий партнер, знижка 2%
+//  - Якщо витрачено від [1000 до 5000) - срібний партнер, знижка 5%
+//  - Якщо витрачено більше [5000 - золотий партнер, знижка 10%
+//  - Якщо витрачено менше 100) - не партнер, знижка 0%
+
+//  - В результаті вивести повідомлення
+//  «Оформляемо замовлення на суму [сума] зі знижкою [знижка]%»
+
+// 'Бронзовий партнер, знижка 2%'
+// 'Срібний партнер, знижка 5%'
+// 'Золотий партнер, знижка 10%'
+// 'У вас ще немає партнерської знижки'
+
+
+// const totalSpent = parseFloat(prompt("Введіть загальну суму витрачених коштів:"));
+
+// const payment = parseFloat(prompt("Ведіть суму поточного платежу "))
+
+// let discount = 0;
+
+// if(totalSpent >= 5000){
+//     discount = 10;
+// }else if(totalSpent >= 1000 && totalSpent < 5000){
+//     discount = 5;
+// }else if(totalSpent >= 100 && totalSpent < 1000){
+//     discount = 2;
+// }else {
+//     discount = 0;
+// }
+// const totalPrise = payment - (payment * discount / 100)
+// alert(`Оформляемо замовлення на суму ${totalPrise} зі знижкою ${discount}%`)
+
+
+        let modalFile = prompt("Введіть Text");
+        let fileModal = prompt("Введіть Texts");
+       
+    if  (modalFile !== "" && fileModal !== ""){
+    console.log("Обидва поля заповнені");
+} else {
+    console.log("Не всі поля заповнені");
+}   
+
+//Створіть дві змінні для зберігання числових значень. Обчисліть їх суму. Якщо сума більше 10 — виведіть "Сума більша за 10", якщо ні — "Сума менша або дорівнює 10".
+
+let num1 = parseFloat(prompt("Введіть перше число"));
+let num2 = parseFloat(prompt("Введіть друге число"));
+
+let sum = num1 + num2; // обчислення суми parseFloat
+
+        if ((sum > 10)){
+    console.log("Сума більша за 10");
+} else {
+    console.log("Сума менша або дорівнює 10");
+}
+console.log("Сума чисел:", sum); // виведення результату
+
+//Створіть змінну для зберігання тексту. Перевірте, чи містить цей текст слово "JavaScript". 
+// Якщо містить, виведіть "Текст містить слово JavaScript", якщо ні — "Текст не містить слово JavaScript".
+
+const javaScript = "JavaScript"
+
+if (javaScript.includes("JavaScript")) {
+    console.log("Текст містить слово JavaScript");
+} else {
+    console.log("Текст не містить слово JavaScript");
+}
+//Створіть змінну для зберігання числа. Перевірте, чи це число більше 10 і менше 20. 
+// Якщо так — виведіть "Число входить в діапазон від 10 до 20", якщо ні — "Число не входить в діапазон від 10 до 20".
+
+let num = parseFloat(prompt("Введіть перше число"));
+
+        if ((num > 10 && num < 20)){
+    console.log("Число входить в діапазон від 10 до 20");
+} else {
+    console.log("Число не входить в діапазон від 10 до 20");
+}
+
+//Створіть змінні для зберігання значень полів (ім'я, email, пароль). Перевірте, чи ім'я містить не менше 3 символів, чи email містить символ @ 
+// та крапку після нього, а пароль не менше 6 символів. 
+// Якщо всі умови виконані — виведіть "Перенаправлення на іншу сторінку", якщо ні — "Помилка: неправильне заповнення".
+
+let name = prompt("Введіть ім'я");
+let email = prompt("Введіть email");
+let password = prompt("Введіть пароль");
+
+if (name.length >= 3 && email.includes("@") && email.includes(".") && password.length >= 6) {
+    console.log("Перенаправлення на іншу сторінку");
+} else {
+    console.log("Помилка: неправильне заповнення");
+}
