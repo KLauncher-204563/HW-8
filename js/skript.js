@@ -545,9 +545,17 @@ for (let i = 0; i < stringsо.length; i++) {
 }
 
 
-let numbersг = [1, 5, 12, 3, 7, 19, 23, 15, 8, 11];
-let max = Math.max(...numbersг);
+let numbersl = [1, 5, 12, 3, 7, 19, 23, 15, 8, 11];
+let max = numbersl[0]; 
+
+for (let i = 1; i < numbersl.length; i++) {
+    if (numbersl[i] > max) {
+        max = numbersl[i];
+    }
+}
+
 console.log("Максимальне значення:", max);
+
 
 
 
