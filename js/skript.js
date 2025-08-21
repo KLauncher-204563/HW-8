@@ -379,7 +379,7 @@
 
 // alert("Ви ввели правильне число: " + num);
 
-//let ffyhktptkykykjgkhojgkgkh;
+// let ffyhktptkykykjgkhojgkgkh;
 // let num;
 
 //  do {
@@ -399,44 +399,602 @@
 //  }while(true) 
 
 
-let i = 1;
-while (i <= 10) {
-    console.log(i);
-    i++;
+// let i = 1;
+// while (i <= 10) {
+//     console.log(i);
+//     i++;
+// }
+
+// //Вивести в консоль всі парні числа від 2 до 20 за допомогою циклу for. Якщо число парне, пропустити його за допомогою continue.
+
+// for (let i = 2; i <= 20; i++) {
+//     if (i % 2 !== 0) {
+//         continue;   
+//     }
+//     console.log(i); 
+// }
+
+
+
+// for (let i = 1; i <= 10; i++) {
+//     console.log(`7 * ${i} = ${7 * i}`);
+// }
+
+
+
+// let n = parseInt(prompt("Введіть число n:"));
+
+// for (let i = 0; ; i++) {
+//     if (i >= n) {
+//         break;
+//     }
+//     console.log(i);
+// }
+
+
+// while (i <= 20) {
+//     if (i % 3 === 0) {
+//         i++;
+//         continue;
+//     }
+//     console.log(i);
+//     i++;
+// }   
+
+// Напиши скрипт який рахує суму елементів двух масивів. Без методу concat()
+
+// const array1 = [5, 10, 15, 20];
+// const array2 = [10, 20, 30];
+
+// let totalSum = 0;
+
+// for (let i = 0; i < array1.length; i++) {
+//   totalSum += array1[i];
+// }
+
+// for (let i = 0; i < array2.length; i++) {
+//   totalSum += array2[i];
+// }
+
+// console.log(totalSum); // Виведе: 110
+
+// ЗНАЙТИ ПОД яким Індексом знаходитця Анастасія
+
+// const names = [
+//   "Олександр",
+//   "Марія",
+//   "Іван",
+//   "Анастасія",
+//   "Андрій",
+//   "Олена",
+//   "Дмитро",
+//   "Катерина",
+//   "Сергій",
+//   "Юлія",
+// ];
+
+// for(let i = 0; i < names.length; i += 1){
+// if (names[i] === "Анастасія")
+
+//     console.log("Ім'я Анастасія знаходится під індексом", i );
+// }
+
+// вивести в консоль ім'я людей яких імен більше 6 літер
+
+// for(let i = 0; i < names.length; i += 1){
+//     if(names[i].length <= 6)
+//         continue
+//     console.log(names[i]);
+//     }
+
+// for(let i = 0; i < names.length; i += 1){
+//     if(names[i].length > 6)
+
+//     console.log(names[i]);
+//     }
+
+// Створення масиву з трьох чисел
+let numbersf = [5, 3, 8];
+
+// Зміна значення другого елемента
+numbersf[1] = 10;
+
+console.log(numbersf);
+
+
+// Створення масиву з трьох рядків
+let strings = ["apple", "banana", "cherry"];
+
+// Додавання ще одного рядка
+strings.push("date");
+
+console.log(strings);
+
+
+//Створити скрипт який поверне суму всіх чисел в масиві.
+
+
+let numbersq = [5, 10, 15, 20];
+let sum = 0;
+
+for (let i = 0; i < numbersq.length; i++) {
+    sum += numbersq[i];
 }
 
-//Вивести в консоль всі парні числа від 2 до 20 за допомогою циклу for. Якщо число парне, пропустити його за допомогою continue.
+console.log("Сума всіх чисел в масиві:", sum);
 
-for (let i = 2; i <= 20; i++) {
-    if (i % 2 !== 0) {
-        continue;   
+
+//Створити масив з 5-ти чисел. Вивести на екран всі елементи масиву за допомогою циклу for.
+     
+let numbers = [3, 7, 12, 25, 45];
+
+for (let i = 0; i < numbers.length; i++) {
+    console.log(numbers[i]);
+}
+
+//jhrhjryjmtrgekmgioggkgkkhjtkigohiijhiiikgrgtdmrherwfserfdawcafegwjrtuyyghbndtn rfr ltkf df grths rhr rfrltkf ghbdtn ghfknb nhrg rfr nfr gktitkgik fgrgttrbhreterfgrkglghlejgildkfkjfd
+//Створити масив із 5-ти рядків. Вивести на екран кожен рядокз масиву, який містить більше 5-ти символів.
+
+
+let stringsо = ["apple", "banana", "cherry", "kiwi", "orange"];
+
+for (let i = 0; i < stringsо.length; i++) {
+    if (stringsо[i].length > 5) {
+        console.log(stringsо[i]);
     }
-    console.log(i); 
 }
 
 
-
-for (let i = 1; i <= 10; i++) {
-    console.log(`7 * ${i} = ${7 * i}`);
-}
-
+let numbersг = [1, 5, 12, 3, 7, 19, 23, 15, 8, 11];
+let max = Math.max(...numbersг);
+console.log("Максимальне значення:", max);
 
 
-let n = parseInt(prompt("Введіть число n:"));
 
-for (let i = 0; ; i++) {
-    if (i >= n) {
-        break;
+let numbers2 = [1, 4, 5, 8, 12, 15, 18, 20, 25, 30];
+
+for (let i = 0; i < numbers2.length; i++) {
+    if (numbers2[i] % 2 === 0) {
+        console.log(numbers2[i]);
     }
-    console.log(i);
 }
 
 
-while (i <= 20) {
-    if (i % 3 === 0) {
-        i++;
-        continue;
-    }
-    console.log(i);
-    i++;
-}   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
