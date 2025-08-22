@@ -505,10 +505,11 @@ console.log(numbersf);
 // Створення масиву з трьох рядків
 let strings = ["apple", "banana", "cherry"];
 
-// Додавання ще одного рядка
-strings.push("date");
+// Додавання ще одного рядка через індексацію
+strings[strings.length] = "date";
 
 console.log(strings);
+
 
 
 //Створити скрипт який поверне суму всіх чисел в масиві.
@@ -566,17 +567,6 @@ for (let i = 0; i < numbers2.length; i++) {
         console.log(numbers2[i]);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
