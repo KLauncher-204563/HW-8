@@ -574,425 +574,53 @@
 // 👉 Потім через join()
 
 
+const friends = ['Mango', 'Poly', 'Kiwi', 'Ajax'];
+let string = '';
+for (let i = 0; i < friends.length; i++) {
+    string += friends[i] + ' ';
+}
+console.log(string.trim());  // Mango Poly Kiwi Ajax
 
 
 
+const friendss = ['Mango', 'Poly', 'Kiwi', 'Ajax'];
+const strings = friendss.join(' ');
+console.log(strings);  // Mango Poly Kiwi Ajax
 
+const cards = [
+    'Карточка-1',
+    'Карточка-2',
+    'Карточка-3',
+    'Карточка-4',
+    'Карточка-5',
+]
 
+const cardToRemove = 'Карточка-3';
+const indexToRemove = cards.indexOf(cardToRemove);
+if (indexToRemove !== -1) {
+    cards.splice(indexToRemove, 1);
+}
 
+const cardToInsert = 'Карточка-6';
+const insertAfter = 'Карточка-2';
+const indexToInsert = cards.indexOf(insertAfter);
+if (indexToInsert !== -1) {
+    cards.splice(indexToInsert + 1, 0, cardToInsert);
+}
 
+const cardToUpdate = 'Карточка-4';
+const updatedCard = 'Нова-Карточка-4';
+const indexToUpdate = cards.indexOf(cardToUpdate);
+if (indexToUpdate !== -1) {
+    cards[indexToUpdate] = updatedCard;
+}
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(cards);
 
 
 
