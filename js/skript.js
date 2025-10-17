@@ -1,244 +1,141 @@
-// // // const processArray = (callback, array) => {
-// // //     return callback(array);
-// // // };
+// Завдання 1
+// Напиши скрипт, який, для об'єкта user, послідовно:
+// додає поле mood зі значенням 'happy'
+// замінює значення hobby на 'skydiving'
+// замінює значення premium на false
+// виводить вміст об'єкта user в форматі ключ:значення використовуючи Object.keys() і for...of
+// Завдання 2
+// Напиши функцію countProps(obj), яка рахує кількість властивостей в об'єкті. Функція повертає число — кількість властивостей.
+// Завдання 3
+// Напиши функцію findBestEmployee(employees), яка приймає об'єкт співробітників і повертає ім'я найпродуктивнішого 
+// (який виконав більше всіх задач). Співробітники і кількість виконаних завдань містяться як властивості об'єкта в форматі "ім'я":"кількість задач".
+// Завдання 4
+// Напиши функцію countTotalSalary(employees) приймаючу об
+// 'єкт зарплат. Функція рахує загальну суму зарплати працівників і повертає її. Кожне поле об'єкта, 
+// переданого в функцію, має вигляд "ім'я":"зарплата".
+// Завдання 5
+// Напиши функцію getAllPropValues(arr, prop), яка отримує масив об'єктів і ім'я властивості. 
+// Повертає масив значень певної властивості prop з кожного об'єкта в масиві.
+// Завдання 6
+// Напиши функцію calculateTotalPrice(allProdcuts, productName), яка отримує масив об'єктів та ім'я продукту 
+// (значення властивості name). Повертає загальну вартість продукту (ціна * кількість).
+// Викличи функції для перевірки працездатності твоєї реалізації.
+// Завдання 7 — додаткове, виконувати не обов'язково
+// Напиши сценарій керування особистим кабінетом інтернет-банку. Є об
+// 'єкт account в якому необхідно реалізувати методи для роботи з балансом та історією транзакцій.
 
-// // const { version } = require("react");
-
-// // // const searchShortword = (array) => {
-// // //     let shortestWord = array[0];
-// // //     for (const word of array) {
-// // //         if (word.length < shortestWord.length) {
-// // //             shortestWord = word;
-// // //         }
-// // //     }
-// // //     return shortestWord;
-// // // };
-
-// // // console.log(
-// // //     processArray(searchShortword, ["student", "salesman", "come", "y", "metal"])
-// // // );
-
-
-// // // const fn = (callback, array) => {
-// // //     return callback(array);
-// // // };
-
-// // // const callback = (array) => {
-// // //     for (let i = 0; i < array.length; i++) {
-// // //         // console.log(array[i])
-// // //         console.log(typeof array[i]);
-
-// // //         if (typeof(array[i]) === "string") {
-// // //             console.log("sodkr");
-// // //         }
-// // //     }
-// // // };
-
-// // // const arr = [10, "**", 3, "red"]; // Знайти які є числа та рядки
-// // // console.log(fn(callback, arr));
-
-
-// // const numbers = [1, 5, 8, 12, 3, 15, 7, 20];
-// // const words = ['кіт', 'собака', 'миша', 'папуга', 'хомяк'];
-
-// // function countItems(array, condition) {
-// //   let count = 0;
-// //   for (const element of array) {
-// //     if (condition(element)) {
-// //       count++;
-// //     }
-// //   }
-// //   return count;
-// // }
-
-// // const isEven = num => num % 2 === 0;
-// // const isLarge = num => num > 10;
-// // const isShort = word => word.length <= 3;
-
-// // console.log('Парних чисел:', countItems(numbers, isEven));  // 3
-// // console.log('Чисел більше 10:', countItems(numbers, isLarge)); // 3
-// // console.log('Коротких слів:', countItems(words, isShort)); // 1
-
- 
-
-
-
-// // const calculate = (a, b, operation) => operation(a, b);
-
-// // const add = (a, b) => a + b;
-// // const subtract = (a, b) => a - b;
-// // const multiply = (a, b) => a * b;
-// // const divide = (a, b) => {
-// //   if (b === 0) {
-// //     return 'Помилка: ділення на нуль!';
-// //   }
-// //   return a / b;
-// // };
-
-// // console.log(calculate(10, 5, add));      
-// // console.log(calculate(10, 5, subtract)); 
-// // console.log(calculate(10, 5, multiply)); 
-// // console.log(calculate(10, 5, divide));   
-// // console.log(calculate(10, 0, divide));  
-
-
-
-
-// // function repeatMessage(times, messageCreator) {
-// //   for (let i = 0; i < times; i++) {
-// //     console.log(messageCreator(i));
-// //   }
-// // }
-
-
-// // repeatMessage(3, i => `Повідомлення №${i + 1}`);
-// // repeatMessage(5, i => `*${i}* Hello!`);
-// // repeatMessage(4, i => `Квадрат ${i} = ${i * i}`);
-
-
-// const user = {
-//     name: "arsenii",
-//     age: 20, 
-//     location: "ucrain",
-//     surname: "vdovychenko",
-
-// }
-
-// // for (const key in user){
-// //     // console.log(key);
-// //     console.log(user[key]);
-    
-// // }
-
-// // const kay = Object.keys(user)
-// // console.log(kay);
-// // for(const x of kay){
-// //   // console.log(x);
-// //   console.log(user[x]);
-  
-// // }
-// const key = Object.keys(user)
-// console.log(key);
-
-// const vely = Object.values(user)
-// console.log(vely);
-
-// const entri = Object.entries(user)
-// console.log(entri);
-// for (const x of entri){
-//   console.log(x[1]);
-  
-// }
-  
-
-
-// // Дано масив об’єктів
-//     const friends = [
-//     { name: "Mango", online: false },
-//     { name: "Kiwi", online: true },
-//     { name: "Poly", online: false },
-//     { name: "Ajax", online: false },
-//     ];
-
-//     const findFriendByName = (array, friendName) => {
-//     for (const i of array) {
-//         if (i.name === friendName) {
-//         return `Друга знайшли ${friendName}`;
-//         }
-//     }
-//     return `Друга не знайшли ${friendName}`; 
-//     };
-
-//     // Написати функція яка буде отримувати масив та ім’я друга якого потрібно знайти
-//     console.log(findFriendByName(friends, "Poly"));
-//     console.log(findFriendByName(friends, "Chelsy"));
-// ------------------ bankAccount ------------------
-let bankAccount = {
-  ownerName: "Іван",
-  accountNumber: "UA123456789",
-  balance: 1000,
-
-  deposit: function (amount) {
-    this.balance += amount;
-    alert(`На рахунок додано ${amount} грн. Залишок: ${this.balance} грн.`);
-  },
-
-  withdraw: function (amount) {
-    if (amount <= this.balance) {
-      this.balance -= amount;
-      alert(`Знято ${amount} грн. Залишок: ${this.balance} грн.`);
-    } else {
-      alert("Недостатньо коштів на рахунку!");
-    }
-  }
+const user = {
+  name: "John",
+  age: 30,
+  hobby: "reading",
+  premium: true
 };
-
-// Використання confirm() і prompt()
-if (confirm("Бажаєте поповнити рахунок?")) {
-  let sum = parseFloat(prompt("Введіть суму для поповнення:"));
-  bankAccount.deposit(sum);
-} else if (confirm("Бажаєте зняти гроші?")) {
-  let sum = parseFloat(prompt("Введіть суму для зняття:"));
-  bankAccount.withdraw(sum);
-} else {
-  alert(`Ваш баланс: ${bankAccount.balance} грн.`);
+user.mood = "happy";
+user.hobby = "skydiving";
+user.premium = false;
+const keys = Object.keys(user);
+for (const key of keys) {
+  console.log(`${key}: ${user[key]}`);
 }
 
-
-// ------------------ weather ------------------
-let weather = {
-  temperature: parseFloat(prompt("Введіть температуру (°C):")),
-  humidity: 70,
-  windSpeed: 5,
-
-  isBelowZero: function () {
-    return this.temperature < 0;
-  }
-};
-
-if (weather.isBelowZero()) {
-  alert("Температура нижче 0 градусів Цельсія ❄️");
-} else {
-  alert("Температура вище або рівна 0 градусів Цельсія 🌞");
+function countProps(obj) {
+  return Object.keys(obj).length;
 }
+console.log(countProps({ name: "Mango", age: 2 })); 
+console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 })); 
 
+function findBestEmployee(employees) {
+  let bestName = "";
+  let maxTasks = 0;
 
-// ------------------ user ------------------
-let user = {
-  name: "Петро",
-  email: "test@example.com",
-  password: "12345",
-
-  login: function () {
-    let inputEmail = prompt("Введіть email:");
-    let inputPassword = prompt("Введіть пароль:");
-
-    if (inputEmail === this.email && inputPassword === this.password) {
-      alert("Вхід виконано успішно ✅");
-    } else {
-      alert("Невірний email або пароль ❌");
+  for (const [name, tasks] of Object.entries(employees)) {
+    if (tasks > maxTasks) {
+      maxTasks = tasks;
+      bestName = name;
     }
   }
+
+  return bestName;
+}
+const employees = {
+  John: 10,
+  Peter: 15,
+  Kate: 25,
+  Mary: 20
 };
-
-// Виклик методу входу
-user.login();
+console.log(findBestEmployee(employees)); 
 
 
-// ------------------ movie ------------------
-let movie = {
-  title: "Inception",
-  director: "Christopher Nolan",
-  year: 2010,
-  rating: 8.8,
+function countTotalSalary(employees) {
+  let total = 0;
 
-  isHighRated: function () {
-    return this.rating > 8;
+  for (const salary of Object.values(employees)) {
+    total += salary;
   }
+  return total;
+}
+const salaries = {
+  John: 1000,
+  Mary: 1500,
+  Peter: 1200
 };
+console.log(countTotalSalary(salaries)); 
 
-console.log(`Назва: ${movie.title}`);
-console.log(`Режисер: ${movie.director}`);
-console.log(`Рік: ${movie.year}`);
-console.log(`Рейтинг: ${movie.rating}`);
-console.log(`Фільм має високий рейтинг? ${movie.isHighRated()}`);
+
+function getAllPropValues(arr, prop) {
+  const values = [];
+
+  for (const obj of arr) {
+    if (prop in obj) {
+      values.push(obj[prop]);
+    }
+  }
+
+  return values;
+}
+
+const products = [
+  { name: "Apple", price: 50, quantity: 10 },
+  { name: "Banana", price: 20, quantity: 5 },
+  { name: "Orange", price: 30, quantity: 15 }
+];
+
+console.log(getAllPropValues(products, "name")); 
+console.log(getAllPropValues(products, "quantity")); 
+
+
+function calculateTotalPrice(allProducts, productName) {
+  let total = 0;
+
+  for (const product of allProducts) {
+    if (product.name === productName) {
+      total += product.price * product.quantity;
+    }
+  }
+
+  return total;
+}
+const allProducts = [
+  { name: "Apple", price: 50, quantity: 10 },
+  { name: "Banana", price: 20, quantity: 5 },
+  { name: "Orange", price: 30, quantity: 15 }
+];
+console.log(calculateTotalPrice(allProducts, "Apple")); 
+console.log(calculateTotalPrice(allProducts, "Orange")); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
