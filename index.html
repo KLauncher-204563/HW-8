@@ -1,127 +1,121 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="uk" align="center">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/stule.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Моє портфоліо</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <body>
-    <div class="text-box">
-        <h3>Пофарбуйте мене в рожевий колір (color:pink).</h3>
-        <p>Даний елемент має залишитись неоформленим.</p>
-        <p id="greycol">Пофарбуйте мене в сірий колір (color:grey).</p>
-        <div>
-            Даний елемент має залишитись неоформленим.
-        </div>
-        <div>
-            <p>Пофарбуйте мене в червоний колір (color:red).</p>
-        </div>
-        <h3>Даний елемент має залишитись неоформленим.</h3>
-        <p>Пофарбуйте мене в зелений колір (color:green).</p>
-        <p class="yellow">Пофарбуйте мене в жовтий колір (color:yellow).</p>
-      </div>
-      <div class="wrapper">
-      <section>
-        <button id="q">Сповiщати</button>
-        <h1>  Cписки уроків  </h1>
-        <ul id="pon">
-        <h2>Понеділок </h2>
-        <p>1 зміна </p>
-        <p>Англ.яз.</p>
-        <p> Укр мова  </p>
-<p>algebra</p>
-        </ul>
-        <ul id="wiw">
-            <h2>wiwtirik</h2>
-            <p>geografi</p>
-            <p>Ykr lit</p>
-            <p>ictr</p>
-        </ul>
-        <ul id="cre">
-            <h2>creda</h2>
-            <p>muctestwo</p>
-            <p>fiz-ra</p>
-            <p>pusto</p>
-        </ul>
-        <ul id="greycol">
-            <h2>chetwerg</h2>
-            <p>Lorem ipsum dolor sit amet consectetur,
-                <p>gree</p>
-            <p>wggwgwgwwgw</p>
-        </ul>
-        <ul id="fr">
-            <h2>frider</h2>
-            <p>matema</p>
-            <p>fiz-ra</p>
-            <p>fesgrh</p>
-        </ul>
-        <span>good</span>
-      </section>
-    </div>
-    <script type="module" src="./js/skript.js"></script>
+<header class="animate__animated animate__rollIn">
+    <h1>Іван Луговий</h1>
+    <p>Frontend-розробник</p>
+</header>
+<main>
+<nav class="animate__animated animate__rollIn">
+    <ul>
+        <li><a href="#about">Про мене</a></li>
+        <li><a href="#skills">Навички</a></li>
+        <li><a href="#projects">Проєкти</a></li>
+        <li><a href="#contacts">Контакти</a></li>
+    </ul>
+</nav>
+
+<section id="about" class="animate__animated animate__backInRight">
+    <h2>Про мене</h2>
+    
+    <img src="./img/I.jpg" alt="Моє фото">
+
+    <p>
+        Я початківець frontend-розробник. Вивчаю HTML, CSS та JavaScript.
+    </p>
+
+    <h3>Освіта</h3>
+    <ul>
+        <li>GoIT — Frontend курс</li>
+        <li>Коледж (Комп’ютерні науки)</li>
+    </ul>
+</section>
+
+<section id="skills" data-aos="flip-left">
+    <h2>Навички</h2>
+
+    <ul>
+        <li>
+            Технічні навички:
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </li>
+
+        <li>
+            Технології:
+            <ul>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>VS Code</li>
+            </ul>
+        </li>
+
+        <li>
+            Мови:
+            <ul>
+                <li>Українська</li>
+                <li>Російська</li>
+                <li>Англійська</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<section id="projects" data-aos="zoom-in-up">
+    <h2>Проєкти</h2>
+
+    <article>
+        <h3>Сайт-візитка</h3>
+        <a href="https://klauncher-204563.github.io/O.B.R.I.Y.-Games-Studio/" target="_blank"><img src="./img/photo_2026-04-04_12-19-51.jpg" alt="Проєкт 1"></a>
+        <p>Простий сайт-візитка з інформацією про мене.</p>
+        <p><strong>Технології:</strong> HTML, CSS</p>
+    </article>
+
+    <article>
+        <h3>To-Do список</h3>
+<a href="https://klauncher-204563.github.io/test/" target="_blank"><img src="./img/aDa.jpg" alt="Проєкт 2"></a>
+        <p>Додаток для створення списку справ.</p>
+        <p><strong>Технології:</strong> HTML, CSS, JavaScript</p>
+    </article>
+
+    <article>
+        <h3>Калькулятор</h3>
+<a href="https://klauncher-204563.github.io/ANEMONE/" target="_blank"><img src="./img/ane.jpg" alt="Проєкт 3"></a>
+        <p>Простий калькулятор з базовими функціями.</p>
+        <p><strong>Технології:</strong> HTML, CSS, JavaScript</p>
+    </article>
+</section>
+</main>
+<footer>
+<section id="contacts" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+    <h2>Контакти</h2>
+
+    <p>Email: <a href="mailto:ivan@gmail.com">ivan@gmail.com</a></p>
+    <p>Телефон: <a href="tel:+380456845985">+380456845985</a></p>
+
+    <p>Соціальні мережі:</p>
+    <ul>
+        <li><a href="#">Youtube</a></li>
+        <li><a href="#">Telegram</a></li>
+        <li><a href="#">GitHub</a></li>
+    </ul>
+</section>
+</footer>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
-
-
- -->
-<!doctype html>
-<html lang="ru">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mercator (Web Mercator / EPSG:3857) — demo</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-  <style>
-    html,body,#map { height:100%; margin:0; padding:0; }
-    #info { position:absolute; left:10px; top:10px; z-index:1000;
-           background:rgba(255,255,255,0.9); padding:8px; border-radius:6px;
-           font-family:Arial, sans-serif; font-size:13px; }
-  </style>
-</head>
-<body>
-  <div id="info">Проекция: Web Mercator (EPSG:3857). Перетаскивай, приближай колёсиком.</div>
-  <div id="map"></div>
-
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script>
-    // Инициализация карты в Web Mercator (по умолчанию у Leaflet именно эта проекция)
-    const map = L.map('map', {
-      center: [20, 0],
-      zoom: 2,
-      worldCopyJump: true
-    });
-
-    // OpenStreetMap tiles (общедоступные) — в Mercator проекции
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-      attribution: '&copy; OpenStreetMap contributors'
-    }).addTo(map);
-
-    // Привязка по клику — показать координаты (географические) и проекцию в метрах (EPSG:3857)
-    map.on('click', function(e) {
-      const lat = e.latlng.lat.toFixed(6);
-      const lon = e.latlng.lng.toFixed(6);
-
-      // Перевод WGS84 -> Web Mercator (приближённая формула)
-      function lonToX(lon) { return (lon * 20037508.34) / 180; }
-      function latToY(lat) {
-        const rad = lat * Math.PI / 180;
-        return Math.log(Math.tan((Math.PI/4) + (rad/2))) * 20037508.34 / Math.PI;
-      }
-      const x = lonToX(lon).toFixed(2);
-      const y = latToY(lat).toFixed(2);
-
-      L.popup()
-       .setLatLng(e.latlng)
-       .setContent(
-         `<b>lat/lon:</b> ${lat}, ${lon}<br/>
-          <b>EPSG:3857 (метры):</b> X=${x}, Y=${y}`
-       ).openOn(map);
-    });
-  </script>
-<script type="module" src="./js/skript.js"></script>
-</body>
-</html>
-
- 
