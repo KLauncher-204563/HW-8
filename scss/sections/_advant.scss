@@ -1,3 +1,4 @@
+@use "../base/variables" as *;
 .advant {
   padding-top: 60px;
   @media screen and (min-width: 1200px){
@@ -15,6 +16,7 @@
 
     &::before {
       content: "";
+            background-image: url(../img/depositphotos-1320.jpg);
       margin-bottom: 30px;
       display: block;
       width: 100%;
@@ -31,23 +33,24 @@
       }
       @media screen and (min-width:1200px){
         width: 270px;
+        height: 450px;
       }
     }
 
     &:first-child::before {
-      background-image: url(../img/antenna.png);
+background-image: url("../img/I.jpg");
     }
 
     &:nth-child(2)::before {
-      background-image: url(../img/clock.png);
+      background-image: url(../img/osvta.jpg);
     }
 
     &:nth-child(3)::before {
-      background-image: url(../img/diagram.png);
+      background-image: url(../img/2.png);
     }
 
     &:last-child::before {
-      background-image: url(../img/astronaut.png);
+      background-image: url(../img/tsikavi-fakty-pro-movy-narodiv-svitu.jpg);
     }
   }
 
